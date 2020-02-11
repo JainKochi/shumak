@@ -1,0 +1,220 @@
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+
+@media screen and (max-width:1000px){
+    nav ul{
+        display: none;
+    }
+
+    /* our team container  */
+    .team-container{
+        width: 60%;
+        height: 1000px;
+       
+        margin:0  auto;
+      
+        display: grid;
+        grid-template-columns: repeat(2,330px);
+        grid-template-rows: repeat(5,332px);
+        grid-template-areas:
+        "p1  p2"
+        "p3  p4"
+        "p5  p6"
+        "p7  p8"
+        "p9   .";
+        
+    }
+    /* extended page of our team height */
+    .ourteam-extd{
+        height: 1200px !important;
+    }
+    .person9{
+        grid-area: p9;
+        grid-column: 1/-1;
+    }
+}
+
+@media (max-width:961px)  
+{
+     /* tablet, landscape iPad, lo-res laptops ands desktops */
+    
+    /* contact page */
+    .contact{
+       
+        grid-template-columns: 1fr ;
+        grid-template-rows: 450px 450px;
+        grid-template-areas: "map"
+                             "contact"
+        ;
+    }
+    .contacts{
+        padding: 15px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+
+    }
+    .sixth-page{
+        height: 995px;
+    }
+}
+@media (max-width:800px)  {
+    nav:not(2){
+        display: flex;
+    }
+    
+   
+    .team-container{
+
+        display: grid;
+        grid-template-columns: repeat(2,240px);
+        grid-template-rows: repeat(5,332px);
+        grid-template-areas:
+        "p1  p2"
+        "p3  p4"
+        "p5  p6"
+        "p7  p8"
+        "p9   .";
+    }
+}
+@media (max-width:700px) {
+    /* OURteam container */
+     .team-container{
+
+        width: 40%;
+        margin: auto;
+    } 
+}
+
+@media (max-width:600px) {
+    /* first-page */
+    .new-homepage{
+        background: url('img/img-lap-600.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+        
+        
+    }
+    .new-homepage p{
+        position: relative;
+        bottom:300px;
+        text-align: center;
+    }
+    .new-homepage p a{
+       
+        font-size: 50px;
+        padding-left: 44px;
+        z-index: -200;
+    }
+    /* Sponsors PAGE */
+
+    .sponsor-container{
+        display: none;
+    }
+    .golden-sponsors{
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        background-color: blue;
+        
+    }
+     
+    .golden-sponsors:not(:first-child){
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+    .sponsors{
+        height: 100px;
+    }
+    .sponsors  img{
+        height: 30px;
+    }
+        
+    .silver-sponsors{
+        background-color: chocolate;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+    .food-sponsors{
+        background-color: cornflowerblue;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+    .food-sponsors img{
+        height: 30px !important ;
+    }
+    .fifth-page{
+        height: 2555px !important;
+        /* overflow-x: hidden; */
+       
+    }
+    .team-container{
+        width: 73%;
+        margin: auto;
+       
+        display: grid;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,332px);
+        grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        "p8"
+        "p9";
+    }
+    /* ourteam extended */
+    .ourteam-extd{
+        height: 715px !important;
+    }
+    footer{
+            overflow-x: hidden;
+    }
+    .contact{
+       
+        display: grid;
+        grid-row-gap: 44px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 300px 200px;
+        grid-template-areas: "map"
+                             "contact"
+        ;
+    }
+    .map{
+        width: 60%;
+        margin: auto;
+    }
+    .map iframe{
+        border-radius: 14px;
+        width: 100%;
+        height: 300px;
+        
+    }
+    .contacts{
+        width: 400px;
+        padding: 5px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+
+    }
+    /* fourth-page */
+    .fourth-page h2,.fourth-page h2 span{
+           font-size: 40px;
+           padding-left: 0px;
+           padding-right: 24px;
+           text-align: center;
+    }
+}
